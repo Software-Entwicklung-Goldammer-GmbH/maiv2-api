@@ -42,3 +42,43 @@ MAIV2DLL_EXPORT 	AD_GetCorrectionValue(uint nInstance, uint nChannel, float* fVa
 MAIV2DLL_EXPORT 	AD_SetCorrectionValue(uint nInstance, uint nChannel, float  fValue);
 MAIV2DLL_EXPORT 	AD_WriteCorrectionValuesToDevice(uint nInstance);
 
+
+
+
+
+/*
+
+enum eChannelParam {
+	OversamplingMode,
+	Gain,
+	Bipolar,
+	NeighbourDifferential,
+	CardDifferential
+	SetHPFilterOn,
+};
+
+enum eConverterParam {
+	bLowGroupDelayResponseOn,
+	bCOMonGND,
+
+};
+MAIV2DLL_EXPORT		AD_Channel_ReadSingleValue(uint nInstance, uint nChannel, int * nRawValue, double * dVoltage, float * fVoltage);
+MAIV2DLL_EXPORT		AD_Channel_AddToList(uint nInstance, uint nChannel);  
+MAIV2DLL_EXPORT		AD_Channel_GetAvailableParamaters(uint nInstance, uint nChannel, uint* eChannelParamList);
+MAIV2DLL_EXPORT		AD_Channel_GetParamatersAvialableRange(uint nInstance, uint nChannel, uint eChannelParam, int* paramMin ,int* paramMax);
+MAIV2DLL_EXPORT		AD_Channel_SetParamaterValue(uint nInstance, uint nChannel,  uint eChannelParam, int paramValue);
+MAIV2DLL_EXPORT		AD_Channel_GetParamaterValue(uint nInstance, uint nChannel,  uint eChannelParam, int* paramValue);
+					  
+MAIV2DLL_EXPORT		AD_Converter_GetAvailableParamaters(uint nInstance, uint nChannel, uint* eConverterParamList);
+MAIV2DLL_EXPORT		AD_Converter_GetParamatersAvialableRange(uint nInstance, uint nChannel, uint eConverterParam, int* paramMin ,int* paramMax);
+MAIV2DLL_EXPORT		AD_Converter_SetParamaterValue(uint nInstance, uint nADCNr,  uint eConverterParam, int paramValue);
+MAIV2DLL_EXPORT		AD_Converter_GetParamaterValue(uint nInstance, uint nADCNr,  uint eConverterParam, int* paramValue);
+MAIV2DLL_EXPORT		AD_Converter_Count(uint nInstance, uint* nADC_Count);
+					  
+MAIV2DLL_EXPORT		AD_Controller_GetAvailableParamaters(uint nInstance, uint nChannel, uint* eConverterParamList);
+MAIV2DLL_EXPORT		AD_Controller_GetParamatersAvialableRange(uint nInstance, uint nChannel, uint eConverterParam, int* paramMin ,int* paramMax);
+MAIV2DLL_EXPORT		AD_Controller_SetParamaterValue(uint nInstance, uint nADCNr,  uint eConverterParam, int paramValue);
+MAIV2DLL_EXPORT		AD_Controller_GetParamaterValue(uint nInstance, uint nADCNr,  uint eConverterParam, int* paramValue);
+
+
+*/

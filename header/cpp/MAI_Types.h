@@ -42,6 +42,7 @@ typedef struct maidevinfo {
 	uint		di_class;
 	uint		di_instance;
 	const char* di_name;
+	const char* di_uri;
 	struct maidevinfo *next;
 } maidevinfo_t, *p_maidevinfo_t;
 
@@ -123,7 +124,9 @@ enum eCounterParam	{  	ctparamRESOLUTION		  = 0,
 						ctparamHARDWARERESETEDGE      = 8,
 						ctparamINCREMENTINTERPOLATION = 9,
 						ctparamRESOLUTIONFREQUENCY    = 10, 
-						ctparamRESOLUTIONINCTIMESTAMP = 11 };
+						ctparamRESOLUTIONINCTIMESTAMP = 11,
+                        ctparamRESETDELAY             = 12,
+                        ctparamRESETSOURCE            = 13};
 
 
 
@@ -407,9 +410,9 @@ enum eMeasurementChannelType {
 	MEASUREMENTCHANNELTYPE_CT,
 	/// <summary> Digital IN Messdatenkanal.  </summary>
 	/// <summaryE>	Digital IN measurement channel </summaryE>
-	MEASUREMENTCHANNELTYPE_TTL,
+	MEASUREMENTCHANNELTYPE_DI,
 	MEASUREMENTCHANNELTYPE_FIRST = MEASUREMENTCHANNELTYPE_AD,
-	MEASUREMENTCHANNELTYPE_LAST = MEASUREMENTCHANNELTYPE_TTL,
+	MEASUREMENTCHANNELTYPE_LAST = MEASUREMENTCHANNELTYPE_DI,
 	MEASUREMENTCHANNELTYPE_DEFAULT = MEASUREMENTCHANNELTYPE_AD
 };
 

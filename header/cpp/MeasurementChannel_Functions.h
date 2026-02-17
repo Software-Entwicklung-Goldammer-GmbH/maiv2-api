@@ -4,7 +4,9 @@
 #include <MAI_Types.h>
 
 MAIV2DLL_EXPORT MeasurementChannel_GetNumberOfValues(uint nInstance, eMeasurementChannelType eChannelType, uint nChannelListEntry, uint* nNumberOfValues);
+MAIV2DLL_EXPORT MeasurementChannel_ReadDataAsUInt8(uint nInstance, eMeasurementChannelType ChannelType, int nChannelListEntry, uchar pData[], uint * nNumberOfValues, uint bPartBlock, __int64* DateTimeT0, double* DateTimeDeltaT);
 MAIV2DLL_EXPORT MeasurementChannel_ReadDataAsUInt32(uint nInstance, eMeasurementChannelType ChannelType, int nChannelListEntry, uint pData[], uint * nNumberOfValues, uint bPartBlock, __int64* DateTimeT0, double* DateTimeDeltaT);
+MAIV2DLL_EXPORT MeasurementChannel_ReadDataAsFloat(uint nInstance, eMeasurementChannelType ChannelType, int nChannelListEntry, float pData[], uint * nNumberOfValues, uint bPartBlock, __int64* DateTimeT0, double* DateTimeDeltaT);
 MAIV2DLL_EXPORT MeasurementChannel_ReadDataAsDouble(uint nInstance, eMeasurementChannelType ChannelType, int nChannelListEntry, double pData[], uint * nNumberOfValues, uint bPartBlock, __int64* DateTimeT0, double* DateTimeDeltaT);
 
 

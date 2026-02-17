@@ -1,6 +1,6 @@
 
 
-#include "MAILIBAPI\iMAI_LIB.h"
+#include "MAILIBAPI/iMAI_LIB.h"
 
 
 MAIV2DLL_EXPORT GetMAILIB(IMAILIB* hMAILIB);

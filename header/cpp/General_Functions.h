@@ -82,6 +82,9 @@ MAIV2DLL_EXPORT		GetNumberOfBurstsOnADController(uint nCardID, uint * nNumberOfB
 MAIV2DLL_EXPORT		GetNumberOfBurstsOnCTController(uint nCardID, uint * nNumberOfBursts);
 MAIV2DLL_EXPORT		AlteraRegisterRead(uint nCardID, int   nAdress,  uint * nRegisterValue);
 MAIV2DLL_EXPORT		AlteraRegisterWrite(uint nCardID, int   nAdress,  uint  nRegisterValue);
+MAIV2DLL_EXPORT     PreventCompilerOptimization(uint nInstance, void* hOne,void* hTwo, void* hTree,void* hFour,uint ExtraData1,uint ExtraData2);
+
+
 
 //#ifdef DEBUG
 //MAIV2DLL_EXPORT		InternalFlashDataRead(uint nInstance, uint EEPromOffsetStart, uchar PrivateData[], uint nLength);

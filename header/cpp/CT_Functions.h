@@ -46,7 +46,6 @@ MAIV2DLL_EXPORT CT_IncrementalCounterExtensionTime(uint nInstance, uint nChannel
 MAIV2DLL_EXPORT CT_IncrementalCounterExtensionFlow(uint nInstance, uint nChannel);
 MAIV2DLL_EXPORT CT_UpDownCounter(uint nInstance, uint nChannel, uint nPresetValue, uint nUpDown, uint nEdge, uint nSoftwareReset);
 
-
 // new ConterMode Functions for Ethernet Device SingleValue Mode :
 MAIV2DLL_EXPORT CT_SetCounterParameter_SingleValueMode(uint nInstance, uint nChannelNumber, uint eCOUNTERPARAMETER, int nParameterValue);
 MAIV2DLL_EXPORT CT_GetCounterParameter_SingleValueMode(uint nInstance, uint nChannelNumber, uint  eCOUNTERPARAMETER, int*  nParameterValue);
